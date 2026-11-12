@@ -259,7 +259,10 @@
   function findGear(gear, bike) {
     var q = String(bike.intervalsGearName || '').trim().toLowerCase();
     if (!q) return null;
-    var hits = gear.filter(function (g) { return String(g.name || '').toLowerCase().indexOf(q) !== -1; });
+    var name = function (g) { return String(g.name || '').trim().toLowerCase(); };
+    // Pirmenybė tiksliam pavadinimui (pvz. „nuroad“, o ne „virtual nuroad“), tada – pavadinimo daliai.
+    var hits = gear.filter(function (g) { return name(g) === q; });
+    if (!hits.length) hits = gear.filter(function (g) { return name(g).indexOf(q) !== -1; });
     return hits.filter(function (g) { return !g.retired; })[0] || hits[0] || null;
   }
 

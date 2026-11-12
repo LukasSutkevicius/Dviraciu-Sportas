@@ -2,7 +2,7 @@
   "sample": true,
   "bikes": [
     {"id": "revolt", "name": "Giant Revolt Advanced 1", "intervalsGearName": "Giant Revolt"},
-    {"id": "nuroad", "name": "Cube Nuroad Pro FE", "intervalsGearName": "Cube Nuroad"}
+    {"id": "nuroad", "name": "Cube Nuroad Pro FE", "intervalsGearName": "nuroad"}
   ],
   "components": [
     {"id": "chain", "name": "Grandinė", "limitKm": 3000}
