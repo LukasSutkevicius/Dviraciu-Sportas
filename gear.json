@@ -1,0 +1,8 @@
+{
+  "sample": true,
+  "updatedAt": "2026-11-12T06:00:00Z",
+  "gear": [
+    {"id": "b0000001", "name": "Giant Revolt Advanced 1", "distance": 6150, "time": 831600, "activities": 142, "retired": false},
+    {"id": "b0000002", "name": "Cube Nuroad Pro FE", "distance": 9480, "time": 1299600, "activities": 231, "retired": false}
+  ]
+}

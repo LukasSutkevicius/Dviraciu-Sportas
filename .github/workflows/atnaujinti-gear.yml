@@ -1,0 +1,39 @@
+name: Atnaujinti gear.json
+
+on:
+  schedule:
+    - cron: "17 */6 * * *" # kas 6 val. (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atnaujinti-gear
+  cancel-in-progress: false
+
+jobs:
+  atnaujinti:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gauti inventorių iš Intervals.icu
+        env:
+          INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
+          INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
+        run: node .github/scripts/atnaujinti-gear.mjs
+
+      - name: Commit ir push, jei gear.json pasikeitė
+        run: |
+          if [ -z "$(git status --porcelain -- gear.json)" ]; then
+            echo "gear.json nepasikeitė – commit nereikalingas."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gear.json
+          git commit -m "Atnaujinti gear.json iš Intervals.icu"
+          git pull --rebase --autostash
+          git push

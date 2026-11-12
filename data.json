@@ -1,0 +1,16 @@
+{
+  "sample": true,
+  "bikes": [
+    {"id": "revolt", "name": "Giant Revolt Advanced 1", "intervalsGearName": "Giant Revolt"},
+    {"id": "nuroad", "name": "Cube Nuroad Pro FE", "intervalsGearName": "Cube Nuroad"}
+  ],
+  "components": [
+    {"id": "chain", "name": "Grandinė", "limitKm": 3000}
+  ],
+  "changes": [
+    {"id": "revolt-chain-2025-09-14", "bikeId": "revolt", "componentId": "chain", "date": "2025-09-14", "bikeKmAtChange": 1850, "note": "PAVYZDYS: nauja, vaškuota"},
+    {"id": "revolt-chain-2026-04-20", "bikeId": "revolt", "componentId": "chain", "date": "2026-04-20", "bikeKmAtChange": 4200, "note": "PAVYZDYS: nauja, vaškuota"},
+    {"id": "nuroad-chain-2025-06-02", "bikeId": "nuroad", "componentId": "chain", "date": "2025-06-02", "bikeKmAtChange": 3100, "note": "PAVYZDYS: nauja, alyva"},
+    {"id": "nuroad-chain-2026-03-15", "bikeId": "nuroad", "componentId": "chain", "date": "2026-03-15", "bikeKmAtChange": 6700, "note": "PAVYZDYS: nauja, vaškuota"}
+  ]
+}
