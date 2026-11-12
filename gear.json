@@ -1,8 +1,14 @@
 {
-  "sample": true,
-  "updatedAt": "2026-11-12T06:00:00Z",
+  "updatedAt": "2026-11-12T11:23:46Z",
   "gear": [
-    {"id": "b0000001", "name": "Giant Revolt Advanced 1", "distance": 6150, "time": 831600, "activities": 142, "retired": false},
-    {"id": "b0000002", "name": "Cube Nuroad Pro FE", "distance": 9480, "time": 1299600, "activities": 231, "retired": false}
+    {"id":"b10850639","name":"Styvs","distance":3442.5,"time":291578,"activities":42,"retired":false},
+    {"id":"b10994124","name":"virtualus styvs","distance":6167,"time":590669,"activities":136,"retired":false},
+    {"id":"b11722619","name":"Xcalibras","distance":2266,"time":243049,"activities":94,"retired":false},
+    {"id":"b13274636","name":"Giant Revolt ","distance":11156.4,"time":1663003,"activities":249,"retired":false},
+    {"id":"b13950015","name":"Virtualus Giant","distance":2353,"time":292089,"activities":76,"retired":false},
+    {"id":"b14135066","name":"Triban","distance":833.4,"time":98379,"activities":30,"retired":false},
+    {"id":"b17221667","name":"nuroad","distance":2023.5,"time":29546,"activities":12,"retired":false},
+    {"id":"b17660642","name":"virtual nuroad","distance":190.7,"time":0,"activities":0,"retired":false},
+    {"id":"g32539704","name":"Kiprun Shoe","distance":68.8,"time":8873,"activities":4,"retired":false}
   ]
 }
